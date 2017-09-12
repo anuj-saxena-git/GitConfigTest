@@ -1,6 +1,9 @@
 pipeline {
     agent any
     stages {
+        stage ('checkout_scm') {
+            checkout
+        }
         stage (' setting variable') {
             steps {
                 sh '''
