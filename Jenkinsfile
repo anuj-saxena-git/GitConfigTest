@@ -4,7 +4,7 @@ pipeline {
         stage (' setting variable') {
             steps {
                 sh '''
-                    git config --global http.postBuffer 1048576000
+                    git config --global http.postBuffer 1048576001
                 '''
             }
         }
